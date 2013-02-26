@@ -8,6 +8,7 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 ```
     git clone git@github.com:theotherzach/bowling.git
+    gem install minitest turn
 ```
 
 * edit the ~/.gitconfig to be sure we've got human readable diffs
