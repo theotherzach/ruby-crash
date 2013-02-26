@@ -13,7 +13,7 @@ class Game
     score = 0
     frame_index = 0
     10.times do
-      if @rolls[frame_index] == 10
+      if @rolls[frame_index] == 10 # strike
         score += 10 + @rolls[frame_index + 1] + @rolls[frame_index + 2]
         frame_index += 1
       elsif spare?(frame_index)
