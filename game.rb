@@ -13,7 +13,10 @@ class Game
     score = 0
     frame_index = 0
     10.times do
-      if spare?(frame_index)
+      if @rolls[frame_index] == 10
+        score += 10 + @rolls[frame_index + 1] + @rolls[frame_index + 2]
+        frame_index += 1
+      elsif spare?(frame_index)
         score += 10 + @rolls[frame_index + 2]
         frame_index += 2
       else
@@ -24,6 +27,7 @@ class Game
     score
   end
 
+  private
   def spare?(frame_index)
     (@rolls[frame_index] + @rolls[frame_index + 1]) == 10
   end
