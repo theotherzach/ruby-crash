@@ -4,11 +4,14 @@ Bowling Kata
 These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/ArticleS.UncleBob.TheBowlingGameKata) and are not my own. Descriptions of the katas and the rules for this one in particular can be obtained from that site in his words.
 ### Install
 
-* clone the repo and make sure we ignore the README file
+* clone the repo, instal our deps, and pull down all remote branches
 
 ```
     git clone git@github.com:theotherzach/bowling.git
     gem install minitest turn
+    cd bowling
+    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; do git branch --track ${branch##*/} $branch; done
+
 ```
 
 * edit the ~/.gitconfig to be sure we've got human readable diffs
