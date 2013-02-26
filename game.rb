@@ -11,8 +11,10 @@ class Game
 
   def score
     score = 0
-    @rolls.each do |roll|
-      score += roll
+    i = 0
+    10.times do
+      score += @rolls[i] + @rolls[i + 1]
+      i += 2
     end
     score
   end
