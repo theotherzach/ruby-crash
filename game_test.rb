@@ -22,7 +22,7 @@ class GameTest < MiniTest::Unit::TestCase
   end
 
   def test_one_spare
-    skip "Design is wrong. Responsibilities are misplaced."
+    skip
     @game.roll(5)
     @game.roll(5) # spare
     @game.roll(3)
