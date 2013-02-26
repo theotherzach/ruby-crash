@@ -13,7 +13,7 @@ class Game
     score = 0
     frame_index = 0
     10.times do
-      if @rolls[frame_index] == 10 # strike
+      if strike?(frame_index)
         score += strike_bonus(frame_index)
         frame_index += 1
       elsif spare?(frame_index)
@@ -28,6 +28,10 @@ class Game
   end
 
   private
+  def strike?(frame_index)
+    @rolls[frame_index] == 10 # strike
+  end
+
   def sum_open_frame(frame_index)
     @rolls[frame_index] + @rolls[frame_index + 1]
   end
