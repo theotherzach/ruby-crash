@@ -35,6 +35,11 @@ class GameTest < MiniTest::Unit::TestCase
     assert_equal(24, @game.score)
   end
 
+  def test_perfect_game
+    roll_many(12, 10)
+    assert_equal(300, @game.score)
+  end
+
   def roll_strike
     @game.roll(10)
   end
