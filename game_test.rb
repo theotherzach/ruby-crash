@@ -21,7 +21,7 @@ class GameTest < MiniTest::Unit::TestCase
   end
 
   def test_one_spare
-    skip
+    skip 'Need to score 2 balls at once'
     @game.roll(5)
     @game.roll(5) # spare
     @game.roll(3)
