@@ -24,6 +24,7 @@ class Game
     score
   end
 
+  private
   def spare?(frame_index)
     (@rolls[frame_index] + @rolls[frame_index + 1]) == 10
   end

@@ -22,10 +22,14 @@ class GameTest < MiniTest::Unit::TestCase
   end
 
   def test_one_spare
-    @game.roll(5)
-    @game.roll(5) # spare
+    roll_spare
     @game.roll(3)
     roll_many(17, 0)
     assert_equal(16, @game.score)
+  end
+
+  def roll_spare
+    @game.roll(5)
+    @game.roll(5)
   end
 end
