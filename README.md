@@ -10,7 +10,8 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
     git clone git@github.com:theotherzach/bowling.git
     gem install minitest turn
     cd bowling
-    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; do git branch --track ${branch##*/} $branch; done
+    for branch in `git branch -a | grep remotes | grep -v HEAD | grep -v master`; \ 
+        do git branch --track ${branch##*/} $branch; done
 
 ```
 
