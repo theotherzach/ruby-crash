@@ -8,4 +8,10 @@ class GameTest < MiniTest::Unit::TestCase
     20.times { game.roll(0) }
     assert_equal(0, game.score)
   end
+
+  def test_all_ones
+    game = Game.new
+    20.times { game.roll(1) }
+    assert_equal(20, game.score)
+  end
 end
