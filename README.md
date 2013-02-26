@@ -67,10 +67,10 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 #### git checkout
 
-   `git diff HEAD` to see what has changed since your last commit
-   `ruby game_test.rb` one last time to be sure that the test passes before committing
-   `git add game_test.rb` to add the test and git add game.rb to add our app.
-   `type git status` to be sure both files have been staged and are ready
-   `git commit -m "finished step-n"` to add our changes to source control
+* `git diff HEAD` to see what has changed since your last commit
+* `ruby game_test.rb` one last time to be sure that the test passes before committing
+* `git add game_test.rb` to add the test and git add game.rb to add our app.
+* `type git status` to be sure both files have been staged and are ready
+* `git commit -m "finished step-n"` to add our changes to source control
 
 * go back to scout and do it again
