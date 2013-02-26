@@ -11,14 +11,14 @@ class Game
 
   def score
     score = 0
-    i = 0
+    frame_index = 0
     10.times do
-      if (@rolls[i] + @rolls[i + 1]) == 10 # spare
-        score += 10 + @rolls[i + 2]
-        i += 2
+      if (@rolls[frame_index] + @rolls[frame_index + 1]) == 10 # spare
+        score += 10 + @rolls[frame_index + 2]
+        frame_index += 2
       else
-        score += @rolls[i] + @rolls[i + 1]
-        i += 2
+        score += @rolls[frame_index] + @rolls[frame_index + 1]
+        frame_index += 2
       end
     end
     score
