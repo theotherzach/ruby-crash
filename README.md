@@ -32,7 +32,7 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
     * `touch game_test.rb`
     * `touch game.rb`
 * remove the README so that we keep clean diffs
-   * `git -rm README.md`
+   * `git rm README.md`
 * commit our files to soruce control by typing
     * `git add .`
     * `git commit -m "files ready for today"`
