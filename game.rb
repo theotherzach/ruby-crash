@@ -3,11 +3,11 @@ class Game
     @score = 0
   end
 
-  def roll(pins)
+  def roll(pins) # roll calculates score
     @score += pins
   end
 
-  def score
+  def score # score does not calculate score
     @score
   end
 end
