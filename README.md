@@ -28,7 +28,7 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 
 ### The Day
-* Start each day in a fresh branch: git checkout -b "YYYY-MM-DD"
+* Start each day in a fresh branch: `git checkout -b "YYYY-MM-DD"`
 * create our files by typing
     * `touch game_test.rb`
     * `touch game.rb`
