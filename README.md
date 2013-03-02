@@ -72,9 +72,9 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 #### Finish
 * Did you need to look at your notes to complete this step?
-    * If you still need to look at your notes then you're not ready to move on. Reset and start back at *scout* 
+    * If you still need to look at your notes then you're not ready to move on. Reset and start back at **scout** 
         * `git reset HEAD -hard`
-    * If you can complete this section from memory then go to *checkout*.
+    * If you can complete this section from memory then go to **checkout**.
 
 #### git checkout
 
@@ -89,4 +89,4 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 * to add our changes to source control
     * `git commit -m "finished step-n"`
 
-* go back to *scout* and get ready for the next step!
+* go back to **scout** and get ready for the next step!
