@@ -31,7 +31,9 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 
 ### The Day
-* Start each day in a fresh branch: `git checkout -b "YYYY-MM-DD"`
+* Start each day in a fresh branch: 
+    * `git stash`
+    * `git checkout -b "YYYY-MM-DD"`
 * create our files by typing
     * `touch game_test.rb`
     * `touch game.rb`
@@ -42,12 +44,12 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
     * `git add .`
     * `git status`
     * `git commit -m "files ready for today"`
-    * `
+    * `git status`
 
 ### The Cycle
 
 #### Scout and note
-* Find out what the next step is: `git diff origin/branch-n`
+* Find out what the next step is: `git diff branch-n`
 * Write out the next step from the diff on paper, label it branch-n.
 * Turn the paper over so you cannot see it. 
 
