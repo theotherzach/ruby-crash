@@ -48,34 +48,45 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 
 ### The Cycle
 
-#### Scout and note
-* Find out what the next step is: `git diff branch-n`
-* Write out the next step from the diff on paper, label it branch-n.
+#### Scout
+* Write out the next step from the diff on paper from both of our 2 files
+    * `git diff branch-n game_test.rb`
+    * `git diff branch-n game.rb`
+* It's OK if one of the two commands doesn't return anything, the files don't always change. 
 * Turn the paper over so you cannot see it. 
 
 #### game_test
-* Edit game_test.rb to make it match branch-n. (Not all steps have a game_test.rb change. Go directly to green if you don't need to make a change to game_test.rb)
+* Edit game_test.rb to make it match your notes
 * Do not guess, do not rush. If you are not certain of the next step then peek at your notes.
-* Verify that your test matches the next step by typing `git diff branch-n game_test.rb`
-* From the command line, run your failing test: `ruby game_test.rb`
+* Double check your game_test.rb code
+    * `git diff branch-n game_test.rb`
+* Run your failing test:
+    * `ruby game_test.rb`
 
 #### game
-* Edit game.rb to make it match branch-n. (Not all steps have a game.rb change. Go to finish if you don't need to make a change.)
-* Your tests should be green, verify with `ruby game_test.rb`
-* If your test isn't passing then see what is wrong by typing `git diff branch-n`
+* Edit game.rb to make it match your notes
+* Run your test
+    * `ruby game_test.rb`
+* If your test isn't passing then see what is wrong 
+    * `git diff branch-n`
 
 #### Finish
-* Even if your test pass, still be sure you code matches exactly by typing `git diff branch-n`
-* Did you need to look at your notes to get the git diff to match up?
-    * If you still need to look at your notes then you're not ready to move on. Reset and start back at scout by typing git reset HEAD -hard
-    * If you can complete this section from memory then go to checkout.
+* Did you need to look at your notes to complete this step?
+    * If you still need to look at your notes then you're not ready to move on. Reset and start back at *scout* 
+        * `git reset HEAD -hard`
+    * If you can complete this section from memory then go to *checkout*.
 
 #### git checkout
 
-* `git diff HEAD` to see what has changed since your last commit
-* `ruby game_test.rb` one last time to be sure that the test passes before committing
-* `git add game_test.rb` to add the test and git add game.rb to add our app.
-* `type git status` to be sure both files have been staged and are ready
-* `git commit -m "finished step-n"` to add our changes to source control
+* to see what has changed since your last commit
+    * `git diff HEAD`
+* Run tests one more time to be sure that the test passes before committing
+    * `ruby game_test.rb`
+* Add the test and git add game.rb to add our app.
+    * `git add game_test.rb`
+* to be sure both files have been staged and are ready
+    * `git status` 
+* to add our changes to source control
+    * `git commit -m "finished step-n"`
 
-* go back to scout and do it again
+* go back to *scout* and get ready for the next step!
