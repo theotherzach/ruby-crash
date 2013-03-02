@@ -38,8 +38,11 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 * remove the README so that we keep clean diffs
    * `git rm README.md`
 * commit our files to soruce control by typing
+    * `git status`  
     * `git add .`
+    * `git status`
     * `git commit -m "files ready for today"`
+    * `
 
 ### The Cycle
 
@@ -48,19 +51,19 @@ These ideas are presented in Uncle Bob's [bowling kata](http://butunclebob.com/A
 * Write out the next step from the diff on paper, label it branch-n.
 * Turn the paper over so you cannot see it. 
 
-#### Red
+#### game_test
 * Edit game_test.rb to make it match branch-n. (Not all steps have a game_test.rb change. Go directly to green if you don't need to make a change to game_test.rb)
 * Do not guess, do not rush. If you are not certain of the next step then peek at your notes.
 * Verify that your test matches the next step by typing `git diff branch-n game_test.rb`
 * From the command line, run your failing test: `ruby game_test.rb`
 
-#### Green
+#### game
 * Edit game.rb to make it match branch-n. (Not all steps have a game.rb change. Go to finish if you don't need to make a change.)
 * Your tests should be green, verify with `ruby game_test.rb`
-* If your test isn't passing then see what is wrong by typing `git diff origin/branch-n`
+* If your test isn't passing then see what is wrong by typing `git diff branch-n`
 
 #### Finish
-* Even if your test pass, still be sure you code matches exactly by typing `git diff origin/branch-n`
+* Even if your test pass, still be sure you code matches exactly by typing `git diff branch-n`
 * Did you need to look at your notes to get the git diff to match up?
     * If you still need to look at your notes then you're not ready to move on. Reset and start back at scout by typing git reset HEAD -hard
     * If you can complete this section from memory then go to checkout.
