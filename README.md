@@ -8,7 +8,7 @@ See the wiki
 
 ### Daily Actions - the 10 minute sneaks
 Try to sneak these in when you get 10 minutes here or there
-* http://rubymonk.com/
+* Sequel to try Ruby: http://www.codeschool.com/courses/ruby-bits
 * http://try.github.com/
 * A lesson from http://cli.learncodethehardway.org/book/
 * Finger-upper-downer http://www.typing-lessons.org/Exercise_1.html
