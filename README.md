@@ -27,7 +27,7 @@ Try to sneak these in when you get 10 minutes here or there
     * `touch game.rb`
 * remove the README so that we keep clean diffs
    * `git rm README.md`
-* commit our files to soruce control by typing
+* commit our files to source control by typing
     * `git status`  
     * `git add .`
     * `git status`
